@@ -2,6 +2,6 @@ sudo : required
 services :
     - docker
 before_install :
-    - docker build -t LeadAB/docker-react -f dockerfile.dev .
+    - docker build -t Leadab/docker-react -f dockerfile.dev .
 script :
-  - docker run LeadAB/docker-react npm run test -- --coverage
+  - docker run Leadab/docker-react npm run test -- --coverage
